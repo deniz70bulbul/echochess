@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: echochess
+    runtime: docker
+    plan: free
+    region: frankfurt
+    envVars:
+      - key: ECHOCHESS_ENV
+        value: production
+      - key: ECHOCHESS_EPHEMERAL
+        value: true
+      - key: ECHOCHESS_COOKIE_SECURE
+        value: true
+      - key: ECHOCHESS_COOKIE_SAMESITE
+        value: lax
+      - key: STOCKFISH_PATH
+        value: /app/bin/stockfish
+      - key: ECHOCHESS_SECRET_KEY
+        generateValue: true

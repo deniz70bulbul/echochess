@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+```
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+```
+
+</head>
+<body>
+
+<h1>♟ Chess Bot Dashboard</h1>
+
+<div class="card">
+
+```
+<h2>Welcome {{ username }}</h2>
+
+<p>PGN Count: {{ pgn_count }}</p>
+
+<p>Opening Count: {{ opening_count }}</p>
+<p>
+    Most Played Opening:
+    {{ most_played_opening }}
+</p>
+<p>Gambit Count: 0</p>
+
+<p>Puzzle Count: 0</p>
+
+<p>Bot Count: 0</p>
+
+<p>Clone Accuracy: 0%</p>
+
+<hr>
+
+<p>
+    <a href="/upload_pgn">
+        📂 PGN Upload
+    </a>
+</p>
+
+<p>
+    <a href="#">
+        🧩 Puzzle Upload
+    </a>
+</p>
+
+<p>
+    <a href="#">
+        🤖 My Bots
+    </a>
+</p>
+
+<p>
+    <a href="#">
+        📊 Analysis
+    </a>
+</p>
+
+<p>
+    <a href="#">
+        ⚙ Settings
+    </a>
+</p>
+
+<br>
+
+<a href="/logout">
+    Logout
+</a>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Bot V1</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard-1.0.0.min.css">
+
+    <style>
+        body{
+            background:#1e1e1e;
+            color:white;
+            font-family:Arial;
+            text-align:center;
+        }
+
+        #board{
+            width:600px;
+            margin:30px auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>♟ Chess Bot V1</h1>
+
+<div id="board"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard-1.0.0.min.js"></script>
+
+<script>
+var board = Chessboard('board', {
+    position: 'start'
+});
+</script>
+
+</body>
+</html>
